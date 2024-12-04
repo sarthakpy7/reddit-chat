@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Reddit Chat UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple, interactive UI mimicking a Reddit post and comment section, built using React.
 
-## Available Scripts
+This project allows users to see posts, comments, and replies. It also demonstrates handling nested comments with the option to toggle the visibility of replies. The app is deployed on GitHub Pages for easy access.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Display posts with user avatars, timestamps, and content.
+- View and toggle comments and replies.
+- Fallback avatar images in case the user image is unavailable.
+- Responsive design that adjusts to different screen sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You can view the live demo of the application here:
 
-### `npm test`
+[https://sarthakpy7.github.io/reddit-chat](https://sarthakpy7.github.io/reddit-chat)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **React**: JavaScript library for building user interfaces.
+- **React-Scripts**: Tool for setting up and running React projects.
+- **React-Window**: For efficiently rendering large lists of comments.
+- **GitHub Pages**: Used for hosting the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone this repository:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/sarthakpy7/reddit-chat.git
+   
+2.Navigate to the project folder:
+cd reddit-chat
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3.Install dependencies:
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4.Run the development server:
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app will open in your default browser at http://localhost:3000.
 
-## Learn More
+5.Deployment
+This project is deployed on GitHub Pages. To deploy updates:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+6.Build the project:
+npm run build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+7.Deploy to GitHub Pages:
+npm run deploy
