@@ -1,13 +1,147 @@
+/* General Styles */
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f7f8;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  color: #333; /* Default text color */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* App Container */
+.app {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Post and Comments Section */
+.post,
+.comments {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Post and Comment Headers */
+.post-header,
+.comment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* User Icon */
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover; /* Ensures images scale properly */
+  border: 1px solid #ddd; /* Subtle border for separation */
+}
+
+.comment .user-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Username and Timestamp */
+.username {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+  color: #222; /* Darker for emphasis */
+}
+
+.timestamp {
+  font-size: 0.85em;
+  color: #777;
+  margin: 0;
+}
+
+/* Post and Comment Content */
+.post-content,
+.comment-content {
+  font-size: 1rem;
+  line-height: 1.6; /* Better readability */
+  margin: 10px 0;
+  color: #444;
+  word-break: break-word; /* Prevent content overflow */
+}
+
+/* Replies Section */
+.replies {
+  margin-top: 10px; /* Space between parent comment and replies */
+  padding-left: 20px; /* Indent replies for structure */
+  border-left: 2px dotted #e0e0e0; /* Visual separation */
+  position: relative; /* Contain replies properly */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+/* Nested Replies Avatar Size */
+.replies .user-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Toggle Replies Button */
+.toggle-replies {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin: 10px 0;
+  padding: 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.toggle-replies:hover {
+  color: #0056b3; /* Slightly darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Add slight hover effect to improve interactivity */
+.comment:hover {
+  background-color: #f9f9f9;
+  border-color: #ddd;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+
+  .post,
+  .comments {
+    padding: 15px;
+  }
+
+  .user-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .comment .user-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .username {
+    font-size: 0.9rem;
+  }
+
+  .timestamp {
+    font-size: 0.8rem;
+  }
+}
+
+/* Accessibility Enhancements */
+button:focus {
+  outline: 2px solid #0056b3; /* Focus indicator for better a11y */
 }
